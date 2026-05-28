@@ -14,10 +14,9 @@ export const r2 = `select nome, preco from produtos order by preco asc;`
 
 /* Exercício 3:
   * Escreva entre as áspas da variável "r3" o comando 
-  * para filtrar os pedidos entre os meses de Outubro (10)
-  * e Novembro (11)
+  * para filtrar os pedidos entre os dias de 12 a 18 de dezembro
   */
-export const r3 = `select data_pedido, status from pedidos where data_pedido berween '2025-10' and '2025-11';`
+export const r3 = `select data_pedido, status from pedidos where data_pedido berween '2025-12-12' and '2025-12-18';`
 
 /* Exercício 4:
   * Escreva entre as áspas da variável "r4" o comando 
