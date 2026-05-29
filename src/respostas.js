@@ -23,5 +23,12 @@ export const r3 = `select data_pedido, status from pedidos where data_pedido ber
   * para juntar informações da tabelas de produtos com
   * a tabela de pedidos
   */
-export const r4 = ``
+export const r4 = `select 
+  p.nome,
+  p.id as id_produto,
+  p.preco,
+  pi.preco_unitario
+from produtos p
+inner join itens_pedido pi
+on pi.produto_id = p.id;`
 
